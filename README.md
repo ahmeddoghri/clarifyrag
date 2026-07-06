@@ -35,7 +35,7 @@ agent = ClarifyRAG()
 
 agent.step("tell me about jaguar")
 # ASK  (ambiguity 1.00): "That could mean a few things — did you mean the
-#        animal, or car sense?"   why: top senses contend (animal vs car)
+#        car, or animal sense?"   why: top senses contend (car vs animal)
 
 agent.step("jaguar animal wild cat habitat")
 # ANSWER (ambiguity 0.08): "The jaguar is a large wild cat native to the Americas."
