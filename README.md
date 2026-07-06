@@ -2,6 +2,7 @@
 
 **A clarification-aware search agent that asks before it answers.**
 
+![CI](https://github.com/ahmeddoghri/clarifyrag/actions/workflows/ci.yml/badge.svg)
 ![tests](https://img.shields.io/badge/tests-7%20passing-brightgreen)
 ![python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![deps](https://img.shields.io/badge/runtime%20deps-none-success)
@@ -92,6 +93,13 @@ ask/answer logic is unchanged.
 
 ## Tests
 
+```
+
+Or with Docker:
+
+```bash
+docker build -t clarifyrag .
+docker run --rm clarifyrag
 ```bash
 pip install pytest && pytest -q      # 7 passing
 ```
