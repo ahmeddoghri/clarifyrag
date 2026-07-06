@@ -7,9 +7,9 @@
 >>> agent.step("jaguar animal wild cat habitat").action
 'answer'
 """
-from .corpus import Doc, Hit, Retriever, DEFAULT_CORPUS, tokenize
+from .agent import ClarifyRAG, Resolution, Turn
+from .corpus import DEFAULT_CORPUS, Doc, Hit, Retriever, tokenize
 from .gate import GateDecision, assess
-from .agent import ClarifyRAG, Turn, Resolution
 
 __all__ = [
     "ClarifyRAG", "Turn", "Resolution",
