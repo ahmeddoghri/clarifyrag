@@ -8,6 +8,10 @@
 ![deps](https://img.shields.io/badge/runtime%20deps-none-success)
 ![license](https://img.shields.io/badge/license-MIT-black)
 
+> **Ask a clarifying question only when it actually helps.** In the benchmark,
+> clarify-aware routing hits **100% accuracy while asking 38% fewer questions**
+> than always-asking — highest utility of any policy. `python -m clarifyrag.eval`.
+
 Most RAG agents answer *every* query, even the ambiguous ones — so "what's the
 price of **apple**?" confidently returns the wrong thing half the time. A good
 agent knows when it doesn't have enough to go on and **asks one sharp
