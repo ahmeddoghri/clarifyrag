@@ -1,6 +1,6 @@
 from clarifyrag import ClarifyRAG, Retriever, assess
 from clarifyrag.corpus import DEFAULT_CORPUS
-from clarifyrag.eval import run, BENCH
+from clarifyrag.eval import run
 
 
 def _doc(id):
