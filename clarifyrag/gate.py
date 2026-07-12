@@ -2,10 +2,10 @@
 
 Two complementary signals:
 
-* **Retrieval disagreement** — run the search and look at how retrieved evidence
+* **Retrieval disagreement**: run the search and look at how retrieved evidence
   splits across *topics*. If one sense dominates, answer. If the top two senses
   have comparable mass (low margin / high entropy), the query is ambiguous.
-* **Lexical under-specification** — the query names a known polyseme
+* **Lexical under-specification**: the query names a known polyseme
   (apple, jaguar, python, mercury...) without any disambiguating term.
 
 The gate takes the stronger of the two, so it fires even when the corpus is thin.

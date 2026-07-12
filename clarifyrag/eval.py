@@ -3,11 +3,11 @@
 Each item is a query, the doc the user actually wanted, and whether the query is
 genuinely ambiguous. We measure two things:
 
-1. **Gate quality** — precision/recall/F1 of the "should I ask?" decision.
+1. **Gate quality**: precision/recall/F1 of the "should I ask?" decision.
 2. **End-task utility** under three policies, where asking costs a turn:
-   * ``always_search`` — never clarify (fails on ambiguous queries),
-   * ``always_ask``    — always clarify (wastes turns on clear queries),
-   * ``clarify_aware`` — ClarifyRAG's gated policy.
+   * ``always_search``: never clarify (fails on ambiguous queries),
+   * ``always_ask``: always clarify (wastes turns on clear queries),
+   * ``clarify_aware``: ClarifyRAG's gated policy.
 
 Utility = accuracy - ask_penalty * (avg clarifying questions). The gated policy
 should win: it asks only when it pays off.

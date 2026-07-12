@@ -1,4 +1,4 @@
-"""ClarifyRAG — a clarification-aware search agent that asks before it answers.
+"""ClarifyRAG, a clarification-aware search agent that asks before it answers.
 
 >>> from clarifyrag import ClarifyRAG
 >>> agent = ClarifyRAG()

@@ -29,7 +29,7 @@ class ClarifyRAG:
             return Turn("ask", self._clarify(gate), gate)
         hits = self.retriever.search(query, k=1)
         if not hits:
-            return Turn("ask", "I couldn't find anything — can you rephrase or "
+            return Turn("ask", "I couldn't find anything. Can you rephrase or "
                         "add detail?", gate)
         doc = hits[0].doc
         return Turn("answer", doc.answer, gate, doc)
@@ -38,7 +38,7 @@ class ClarifyRAG:
         senses = [t for t, _ in gate.topics[:3]]
         if len(senses) >= 2:
             opts = ", ".join(senses[:-1]) + f", or {senses[-1]}"
-            return f"That could mean a few things — did you mean the {opts} sense?"
+            return f"That could mean a few things: did you mean the {opts} sense?"
         return "Could you add a bit more detail so I answer the right thing?"
 
     # ---- convenience: run to completion against a simulated user (for eval) ----

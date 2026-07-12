@@ -1,7 +1,7 @@
 """A tiny document store with an interpretable TF-IDF-ish retriever.
 
 Deliberately seeded with polysemous topics (apple, jaguar, python, mercury) so
-ambiguous queries retrieve *conflicting* senses — which is exactly the signal
+ambiguous queries retrieve *conflicting* senses, which is exactly the signal
 ClarifyRAG uses to decide when to ask a clarifying question.
 """
 from __future__ import annotations
